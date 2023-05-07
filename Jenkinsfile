@@ -17,7 +17,7 @@ pipeline {
             
             }
         }
-                stage('test1') {
+                stage('test') {
             steps {
                  sh"mvm test"
                 
