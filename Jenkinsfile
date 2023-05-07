@@ -13,15 +13,15 @@ pipeline {
     stages {
         stage('maven package') {
             steps {
-               sh"mvm clean"
-               sh"mvm install"
-               sh"mvm package"
+               sh 'mvm clean'
+               sh 'mvm install'
+               sh 'mvm package'
             
             }
         }
                 stage('test1') {
             steps {
-                 sh"mvm test"
+                 sh 'mvm test'
                 
             }
         }
