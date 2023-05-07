@@ -17,18 +17,13 @@ pipeline {
             
             }
         }
-                stage('test') {
+                stage('test1') {
             steps {
                  sh"mvm test"
                 
             }
         }
-                stage('test') {
-            steps {
-                echo 'test'
-                
-            }
-        }
+        
                 stage('deploy') {
             steps {
                 echo 'deploy'
